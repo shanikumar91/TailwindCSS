@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- <body>
+       1. What is Tailwind : "Rapidly build modern websites without ever learning your HTML"
+      "Utility-first" means the framework's main focus is on providing utility classes  -->
+      <!-- 1. npm install -D tailwindcss@3.4.17 postcss autoprefixer
+            2. npm install -D vite
+            3. npx tailwindcss init -p
+            4. npm list tailwindcss
+            5.  add in style.css @tailwind base;
+                                 @tailwind components;
+                                  @tailwind utilities;
+            6 add in package.json  "scripts": {
+                                       "start": "vite"
+                                    }, 
+            8. add in tailwind.config.js, content: ["*"],
+            7. npm run start -->
+
+
+
+        <!-- 2. TailWind CLI 
+     <h1 class="underline ml-4 p-4">Tailwind CSS Demo </h1>
+     <h2>Hare Krishna</h2>
+     <h3>Hare Ram</h3> -->
+
+
+    <!-- 3. Typography & Styling  -->
+     <h1 class="text-5xl italic font-semibold text-center">This is h1</h1>
+     <h2 class="text-3xl font-medium ">This is h2</h2>
+     <h3 class="text-1xl font-thin">This is h3</h3>
+     <p class="font-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illo!
+         Quo ducimus maxime, vero corporis libero cumque impedit? Ipsa 
+         maiores blanditiis harum impedit asperiores? Nostrum hic earum
+          dolor veniam eligendi.</p>
+      <p class="font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illo!
+         Quo ducimus maxime, vero corporis libero cumque impedit? Ipsa 
+         maiores blanditiis harum impedit asperiores? Nostrum hic earum
+          dolor veniam eligendi.</p>
+       <p class="font-mono text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, illo!
+         Quo ducimus maxime, vero corporis libero cumque impedit? Ipsa 
+         maiores blanditiis harum impedit asperiores? Nostrum hic earum
+          dolor veniam eligendi.</p>
+          <!-- <div class="bg-green-500 w-1/2 h-8">This is a div</div> -->
+
+
+
+          <!-- Colors  -->
+        <!-- <div class="bg-green-500 w-1/2 h-60 text-white">This is a div</div> -->
+         <!-- <div class="bg-green-500 w-96 h-60 text-rose-500">This is a div</div> -->
+          <!-- <div class="bg-purple-700 w-96 h-60 text-white">This is a div</div> -->
+
+
+          <!-- Spacing Maring  ml, mr, mt, tb, m, mx, my,-->
+            <!-- <div class="bg-purple-700 w-1/2 h-56 text-white m-4">Lorem 
+                ipsum dolor sit amet consectetur adipisicing elit. Animi 
+                autem laudantium commodi, nemo, minima, iusto aut vel libero 
+                quo similique nihil quos ab magnam illum! Aperiam dolores non
+                 optio dolorum!</div> -->
+
+              <!-- Spacing Padding pl, pr, pt, pb, p, px, py  -->
+            <div class="bg-purple-700 w-1/2 h-56 text-white p-4 mb-10">Lorem 
+                ipsum dolor sit amet consectetur adipisicing elit. Animi 
+                autem laudantium commodi, nemo, minima, iusto aut vel libero 
+                quo similique nihil quos ab magnam illum! Aperiam dolores non
+                 optio dolorum!</div>
+
+
+            
+                 <!-- Spacing  -->
+                  <!-- <div class=" flex justify-between">
+                    <div class="bg-yellow-500 text-white ">One</div>
+                    <div class="bg-yellow-500 text-white">Two</div>
+                    <div class="bg-yellow-500 text-white">Three</div>
+                  </div> -->
+
+
+                  <!-- Boredr -->
+                   <div class="bg-yellow-500 text-white m-4 border-2 border-black rounded">One</div>
+                    <div class="bg-yellow-500 text-white m-4 border-2 border-blue-500 rounded-xl">Two</div>
+                    <div class="bg-yellow-500 text-white m-4 border-2 border-rose-500 rounded-2xl">Three</div>
+
+
+                    <!-- Agar hume apne app height and width deside karni ho Using h-[] -->
+                     <div class="bg-yellow-500 text-white m-4 border-2 border-black rounded w-[200px] h-[100px]" >One</div>
+
+
+
+                     <!-- Breakpoints -->
+                      <!-- <div class="bg-yellow-500 text-white m-4 border-2 border-rose-500 rounded-2xl sm:w-32 md:w-48">Three</div> -->
+                       <div class="bg-yellow-500 text-white m-4 border-2 border-rose-500 rounded-2xl sm:bg-green-500 md:bg-yellow-500">Three</div>
+
+
+                    <!-- Apply Directives  : Use @apply to inline and existing utility classes into your own custom CSS -->
+                    <div class="box border-black rounded">One</div>
+                    <div class="box border-blue-500 rounded-xl">Two</div>
+                    <div class="box border-rose-500 rounded-2xl">Three</div>
+
+
+
+
+                    <!-- Activity : Design a Card using Tailwind CSS  -->
+                     <div class="mt-20 mx-44 flex flex-wrap rounded-lg border-2 border-black">
+                        <!-- Quate Container-->
+                         <div class=" w-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white h-24 text-xl flex justify-center items-center font-bold  rounded-t">News you can Trusts</div>
+                         <!--Content Container -->
+                          <div class=" w-full text-center mt-6">
+                            <h3 class="text-lg font-semibold">Stay up to date with the Latest</h3>
+                            <p>Subscribe to our newsletter for the latest news straight into your box</p>
+                            <form class="flex flex-wrap">
+                                <input placeholder="your@gmail.com" class="w-full mx-52 bg-slate-200 text-center placeholder:text-sm my-4 py-2">
+                                <button class="bg-blue-500 mx-52 w-full text-white py-2 rounded-full">Subscribe Now</button>
+                            </form>
+                            <p class="my-6 text-sm ">we value your privacy</p>
+                          </div>
+                     </div>
+</body>             
+</html>
